@@ -14,7 +14,7 @@ namespace MVC.UI
         static Globalvariables()
         {
 
-            WebCilent.BaseAddress = new Uri("https://localhost:44337/api/");
+            WebCilent.BaseAddress = new Uri("https://localhost:44337/api/SystemInformation");
 
             WebCilent.DefaultRequestHeaders.Clear();
 

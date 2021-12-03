@@ -11,8 +11,14 @@ namespace MVC.UI.Controllers
         // GET: SystemInformation         // GET: Home
         public ActionResult Index()
         {
+            //IEnumerable<SystemInformation> emptList; HttpResponseMessage response = Globalvariables.WebCilent.GetAsync("SystemInformation").Result;
+        
+           //emptList = response.Content.ReadAsAsync<IEnumerable<SystemInformation>>().Result; return View(emptList);
             IEnumerable<SystemInformation> emptList; HttpResponseMessage response = Globalvariables.WebCilent.GetAsync("SystemInformation").Result;
-            emptList = response.Content.ReadAsAsync<IEnumerable<SystemInformation>>().Result; return View(emptList);
+            emptList = response.Content.ReadAsAsync<IEnumerable<SystemInformation>>().Result; 
+            return View(emptList);
         }
     }
-}
+
+
+    }
